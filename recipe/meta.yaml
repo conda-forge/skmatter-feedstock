@@ -1,5 +1,5 @@
 {% set name = "skmatter" %}
-{% set version = "0.1.4" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b7a2042d116a5395f5ba81c1efc03df5263b409e36392ee35eefef74857546eb
+  sha256: 370a6ad8f6f9bd3b6467ce6e452995be3cb7ff5129a03f1943715cb25180ff6b
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
