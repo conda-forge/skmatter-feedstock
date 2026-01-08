@@ -1,6 +1,6 @@
 {% set name = "skmatter" %}
 {% set version = "0.3.3" %}
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - scikit-learn >=1.7,<1.8
+    - scikit-learn >=1.8,<1.9
     - scipy >=1.15
 
 test:
